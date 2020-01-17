@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="cs/css.cs">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <!-- 固定导航 -->
+    <div class="fixation" id="fixation">
+        <div></div>
+        <div style="height:68px;">
+            <span class="q_d">
+                <img src="img/签到.PNG" alt="" width=180>
+            </span>
+        </div>
+        <div style="height:63px;margin-top:-8px;border-top:none"></div>
+        <div style="height:63px;margin-top:-8px;border-top:none"></div>
+        <div style="height:60px"></div>
+        <div style="height:50px" id="fixation_one"></div>
+        <div style="height:50px" id="fixation_two"> <a href="#" style="border: 0px black solid;padding:0px 20px 30px 25px;"></a></div>
+    </div>
+    <div class="container">
+        <!-- 导航条 -->
+        <div class="navigation" id="navigation">
+            <span>
+                <img src="img/greenlogo.png" alt="" width="105px">
+            </span>
+            <label class="all" id="all">
+
+                <!-- 全部显示部分 -->
+                <div class="all_block" id="all_block">
+                    <a style="display:inline-block;height:15px;width:90px;position: absolute;top:-15px;background: white"></a>
+                    <span class="all_label_1" id="all_label_1">
+                        <div onmouseover="all_show(0)" style="color:#00BE6E;background:#EDF5F5">平面广告/电商淘宝</div>
+                        <div onmouseover="all_show(1)">元素/背景/艺术字</div>
+                        <div onmouseover="all_show(2)">字库/插画/新媒体配图</div>
+                        <div onmouseover="all_show(3)">PPT模板/word模板</div>
+                        <div onmouseover="all_show(4)">视频音效/网页UI</div>
+                        <div onmouseover="all_show(5)">装饰装修/产品工业</div>
+                        <div onmouseover="all_show(6)">简历模板/EXcel模板</div>
+                    </span>
+                    <span class="all_label_2" id="all_label_2">
+                        <img src="img/q1.PNG" alt="" width=550px>
+                        <img class="all_tu" src="img/q2.PNG" alt="" width=550px>
+                        <img class="all_tu" src="img/q3.PNG" alt="" width=550px>
+                        <img class="all_tu" src="img/q4.PNG" alt="" width=550px>
+                        <img class="all_tu" src="img/q5.PNG" alt="" width=550px>
+                        <img class="all_tu" src="img/q6.PNG" alt="" width=550px>
+                        <img class="all_tu" src="img/q7.PNG" alt="" width=550px>
+                    </span>
+                    <!-- <a style="display:inline-block; border:1px solid black;height:378px;width:800px;position: absolute;left:-200px;"></a> -->
+                </div>
+            </label>
+            <span>
+                <input type="text" placeholder="免费设计素材任意下载" id="input">
+            </span>
+            <span></span>
+            <span>
+                <img src="img/icon_3.png" width=20 id="img_2">
+            </span>
+            <span>
+                <img src="img/icon_4.png" width=20 id="img_3">
+            </span>
+            <span></span>
+            <span>登录|注册</span>
+            <span id="font">
+                <a style="color: #00BE6E">字库</a>
+                <a>樱花海报</a>
+                <a>丝带元素</a>
+                <a style="color: #00BE6E">个人简历</a>
+                <a>安全出行</a>
+                <a>名片</a>
+                <a>金色背景</a>
+                <a style="color: #00BE6E">谷雨海报</a>
+                <a>电商主图</a>
+            </span>
+            <span>
+                <a id="font_two">上传作品</a>
+                <a id="font_three">个人VIP</a>
+                <a id="font_five">企业VIP</a>
+            </span>
+        </div>
+        <!-- 轮播图 -->
+        <div class="carousel" id="carousel">
+            <img src="img/1.jpg" id="photo" width="1400" height="450px" style="margin-left:-80px">
+            <span id="left" class="right"></span>
+            <span id="right" class="left"></span>
+            <div class="dot" id="dot">
+                <span onclick="dotonclick(0)" class="current">●</span>
+                <span class="dspan" onclick="dotonclick(1)">●</span>
+                <span class="dspan" onclick="dotonclick(2)">●</span>
+                <span class="dspan" onclick="dotonclick(3)">●</span>
+                <span class="dspan" onclick="dotonclick(4)">●</span>
+                <span class="dspan" onclick="dotonclick(5)">●</span>
+            </div>
+        </div>
+        <!-- 分类 -->
+        <div class="classify">
+            <div>
+                <span class="itemize">
+                    <a class="tem" >平面广告</a>
+                    <a class="itema">海报</a>
+                    <a class="itema">展板展架</a>
+                    <a class="itema">字库</a>
+                </span>
+                <span class="itemize">
+                    <a class="tem">电商淘宝</a>
+                    <a class="itema">banner</a>
+                    <a class="itema">首页</a>
+                    <a class="itema">主图</a>
+                </span>
+                <span class="itemize">
+                    <a class="tem">元素背景</a>
+                    <a class="itema">装饰</a>
+                    <a class="itema">背景</a>
+                    <a class="itema">艺术字</a>
+                </span>
+                <span>
+                    <hr class="hr">
+                </span>
+                <span class="tem2">
+                    <a>装饰装修</a>
+                    <a>网页UI</a>
+                </span>
+            </div>
+            <br>
+            <div>
+                <span class="itemize">
+                    <a class="tem">PPT模板</a>
+                    <a class="itema">汇报</a>
+                    <a class="itema">总结</a>
+                    <a class="itema">简历</a>
+                </span>
+                <span class="itemize">
+                    <a class="tem">插画绘画</a>
+                    <a class="itema">节日节气</a>
+                    <a class="itema">情感</a>
+                    <a class="itema">商务</a>
+                </span>
+                <span class="itemize">
+                    <a class="tem">视频音效</a>
+                    <a class="itema">AE</a>
+                    <a class="itema">PR</a>
+                    <a class="itema">后期特效</a>
+                </span>
+                <span class="tem2">
+                    <a>产品工业</a>
+                    <a style="color: #00BE6E ">更多</a>
+                </span>
+                <span class="tem3">
+                    <a>特邀申请</a>
+                    <a>积分商城</a>
+                    <a>活动</a>
+                    <br>
+                    <br>
+                    <br>
+                    <a>创意趋势</a>
+                    <a>千图工具</a>
+                    <a>BLO</a>
+                </span>
+                <span class="more">
+                    <img src="img/box.jpg" alt="" width="50">
+                </span>
+            </div>
+        </div>
+        <!-- 切换 -->
+        <div class="sift_head">
+            <span>精选收藏夹</span>
+            <span>激发创意灵感</span>
+            <span>></span>
+        </div>
+        <div id="sift_banner" class="sift">
+            <div id="tion">
+                <span onmousemove="switchover(0)" class="style_sift zcolor ">千图精选</span>
+                <span onmousemove="switchover(1)" class="zcolor">插画风</span>
+                <span onmousemove="switchover(2)" class="zcolor">优秀设计师</span>
+                <span onmousemove="switchover(3)" class="zcolor">热门趋势</span>
+                <span class="btn">查看全部推荐</span>
+            </div>
+            <div id="op" style="margin-top: 5px">
+                <div>
+                    <span>
+                        <img src="img/north1.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north2.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north3.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north4.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <br>
+                    <span>
+                        <img src="img/north5.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north6.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north7.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                </div>
+                <div class="option">
+                    <span>
+                        <img src="img/north8.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north9.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north10.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north11.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <br>
+                    <span>
+                        <img src="img/north12.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north13.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north14.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north15.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                </div>
+
+                <div class="option">
+                    <span>
+                        <img src="img/north16.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north17.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north18.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north19.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <br>
+                    <span>
+                        <img src="img/north20.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north21.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north22.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north23.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                </div>
+                <div class="option">
+                    <span>
+                        <img src="img/north24.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north25.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north26.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north27.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <br>
+                    <span>
+                        <img src="img/north28.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north29.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                    <span>
+                        <img src="img/north30.jpg" alt="" width="285px" hieght="196px"> </span>
+                    <span>
+                        <img src="img/north31.jpg" alt="" width="285px" hieght="196px">
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="sift_head">
+            <span>平面广告</span>
+            <span>最新推荐</span>
+            <span>></span>
+        </div>
+        <div id="sift_banner" class="sift">
+            <div id="op_head">
+                <span onmousemove="switchover_2(0)" class="style_sift ">千图精选</span>
+                <span onmousemove="switchover_2(1)">促销海报</span>
+                <span onmousemove="switchover_2(2)">党建展板</span>
+                <span onmousemove="switchover_2(3)">单页宣传单</span>
+                <a class="btn">查看全部推荐</a>
+            </div>
+            <div id="op_2" style="margin-top: 5px">
+                <div class="dw">
+                    <span class="imgese">
+                        <img src="img/g1.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g2.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y1">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g3.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y2">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g4.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y3">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <br>
+                    <span class="imgese">
+                        <img src="img/g5.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y4">
+                            <span class="zai ">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g6.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y1 y5">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g7.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y2 y5">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g8.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y3 y6">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                </div>
+                <div class="dw" style="display: none">
+                    <span class="imgese">
+                        <img src="img/g9.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g10.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y1">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g11.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y2">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g12.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y3">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <br>
+                    <span class="imgese">
+                        <img src="img/g13.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y4">
+                            <span class="zai ">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g14.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y1 y5">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g15.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y2 y5">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g16.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y3 y6">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                </div>
+                <div class="dw" style="display: none">
+                    <span class="imgese">
+                        <img src="img/g17.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g18.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y1">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g19.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y2">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g20.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y3">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <br>
+                    <span class="imgese">
+                        <img src="img/g21.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y4">
+                            <span class="zai ">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g22.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y1 y5">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g23.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y2 y5">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g24.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y3 y6">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                </div>
+                <div class="dw" style="display: none">
+                    <span class="imgese">
+                        <img src="img/g25.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g26.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y1">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g27.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y2">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g28.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y3">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <br>
+                    <span class="imgese">
+                        <img src="img/g29.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y4">
+                            <span class="zai ">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g30.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y1 y5">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g31.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y2 y5">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                    <span class="imgese">
+                        <img src="img/g32.jpg" alt="" width="285px" hieght="196px">
+                        <span class="cover y3 y6">
+                            <span class="zai">
+                                <img src="img/下载.png" alt="" width="20">立即下载</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <!-- 用户评价 -->
+            <div class="p_y">用户给我们的评价</div>
+            <div class="p_head" id="phead">
+                <span onmousemove="evaluates(0)" class="big" style="border:2px #DADADA solid;opacity: 1;">
+                    <img src="img/d1.jpg" alt="" width=50>
+                </span>
+                <span onmousemove="evaluates(1)">
+                    <img src="img/d2.jpg" alt="" width=50>
+                </span>
+                <span onmousemove="evaluates(2)">
+                    <img src="img/d3.jpg" alt="" width=50>
+                </span>
+                <span onmousemove="evaluates(3)">
+                    <img src="img/d4.jpg" alt="" width=50>
+                </span>
+                <span onmousemove="evaluates(4)">
+                    <img src="img/d5.jpg" alt="" width=50>
+                </span>
+                <span onmousemove="evaluates(5)">
+                    <img src="img/d6.png" alt="" width=50>
+                </span>
+            </div>
+            <div class="p_body" id="pbody">
+                <div>
+                    <img src="img/偷懒1.PNG" alt="" width="600px">
+                </div>
+                <div class="p_t">
+                    <img src="img/偷懒2.PNG" alt="" width="670px">
+                </div>
+                <div class="p_t">
+                    <img src="img/偷懒3.PNG" alt="" width="700px">
+                </div>
+                <div class="p_t">
+                    <img src="img/偷懒4.PNG" alt="" width="600px">
+                </div>
+                <div class="p_t">
+                    <img src="img/偷懒5.PNG" alt="" width="650px">
+                </div>
+                <div class="p_t">
+                    <img src="img/偷懒6.PNG" alt="" width="650px">
+                </div>
+            </div>
+            <div style="font-size: 23px;color:#666666;text-align: center;margin-top:10px">开启名利双收之路</div>
+            <div style="font-size: 14px;color:#919191;text-align: center;margin-top:10px">选择适合你的设计模式</div>
+            <div class="b_tu">
+                <span>
+                    <img src="img/b1.PNG" alt="" width="400px">
+                </span>
+                <span>
+                    <img src="img/b2.PNG" alt="" width="400px">
+                </span>
+
+            </div>
+            <div class="act"><span id="act" onclick="act()">为你推荐<a id="acta">∧</a></span></div>
+            <div class="recommend" id="recommend">
+                <div id="recommend_two" class="recommend_two">
+                    <span  style="color:#888888;" onmouseover="recommend(0)">友情链接</span>
+                    <span onmouseover="recommend(1)">新素材</span>
+                    <span onmouseover="recommend(2)">新搜索</span>
+                    <span onmouseover="recommend(3)">热门素材</span>
+                    <span onmouseover="recommend(4)">热门ppt素材</span>
+                    <span onmouseover="recommend(5)">热门淘宝素材</span>
+                    <span onmouseover="recommend(6)">热门装饰素材</span>
+                    <span onmouseover="recommend(7)">最新专题</span>
+                </div>
+                <div id="recommend_three">
+                    <img  src="img/t1.PNG" alt="" width="1100">
+                    <img class="recommend_t"  src="img/t2.PNG" alt="" width="1100">
+                    <img class="recommend_t" src="img/t3.PNG" alt="" width="1100">
+                    <img class="recommend_t"  src="img/t4.PNG" alt="" width="1100">
+                    <img class="recommend_t"  src="img/t5.PNG" alt="" width="1100">
+                    <img class="recommend_t"  src="img/t6.PNG" alt="" width="1100">
+                    <img class="recommend_t"  src="img/t7.PNG" alt="" width="1100">
+                    <img class="recommend_t"  src="img/t8.PNG" alt="" width="1100">
+                </div>
+            </div>
+            <!-- 底部 -->
+            <div class="bottom">
+                <span>
+                    <a style="color: #666666;font-size:14px;font-weight: bold">常见问题</a>
+                    <a>成为特邀设计师</a>
+                    <a>注册登录</a>
+                    <a>账号/密码</a>
+                    <a>充值/售后</a>
+                    <a>版权投诉</a>
+                </span>
+                <span>
+                    <a style="color: #666666;font-size:14px;font-weight: bold">关于千图网</a>
+                    <a>关于我们</a>
+                    <a>媒体报道</a>
+                    <a>加入我们</a>
+                    <a>心系千图</a>
+                    <a>Q群联盟</a>
+                </span>
+                <span>
+                    <a style="color: #666666;font-size:14px;font-weight: bold">产品服务</a>
+                    <a>官方博客</a>
+                    <a>帮助中心</a>
+                </span>
+                <div class="consult">
+                    <div style="color: #666666;font-size:14px;font-weight: bold">客服咨询</div>
+                    <div>
+                        <label class="bottom_t">
+                            <img src="img/common2QQ.png" alt="">
+                        </label>
+                        <label class="bottom_z">400-9987011 （9:30-18:30） </label>
+                    </div>
+                    <div>
+                        <label class="bottom_t">
+                            <img src="img/common2微信.png" alt="">
+                        </label>
+                        <label class="bottom_z">feedback@58pic.com </label>
+                    </div>
+                    <div class="bottom_btn">
+                        <label style="position: relative;top:5px;">
+                            <img src="img/commonQQQ.png" alt="">
+                        </label>
+                        <label style="color: white;">点我交谈</label>
+                    </div>
+                </div>
+                <div style="margin-top:110px;">
+                    <hr style="color: #999999;height:0.5px;border-top:none;">
+                </div>
+                <div class="banquan">
+                    <label style="position: relative;top:8px;">
+                        <img src="img/新浪.PNG" alt="" width=70>
+                    </label>
+                    <label>注册声明</label>
+                    <label>版权声明</label>
+                    <label>售后服务</label>
+                    <label>隐私声明</label>
+                    <label>隐私声明</label>
+                    <label>Copyright ©2013-现在 千图网 沪ICP备10011451号-6 ICP证书: 沪B2-20180057
+                        <label style="position: relative;top:8px;">
+                            <img src="img/gan1.PNG" alt="" width=20>
+                        </label> 上海工商
+                        <label style="position: relative;top:8px;">
+                            <img src="img/gan2.PNG" alt="" width=25>
+                        </label> 沪公网安备 31011502008675号
+                        <label style="position: relative;top:5px;">
+                            <img src="img/gan3.PNG" alt="" width=50> </label>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+        <script src="js/js.js"></script>
+</body>
+
+</html>
